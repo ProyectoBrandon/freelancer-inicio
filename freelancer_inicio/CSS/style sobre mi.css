@@ -1,0 +1,93 @@
+:root {
+    --blanco: #F1FADA;
+    --a-claro: #9AD0C2;
+    --a-mid: #2D9596;
+    --a-dark: #265073;
+}
+
+/*global*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
+}
+/*typification*/
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/*/typification*/
+
+/* /global */
+
+/*títulos*/
+.title span {
+    font-size: 2rem;
+}
+
+/* /títulos*/
+/*navegación*/
+.nav-bg {
+    background-color: var(--a-mid);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--a-claro);
+    color: var(--a-dark);
+    padding: auto;
+}
+.imagen{
+    text-align: center;
+    margin: 2rem;
+}
+.img{
+    width: 30rem;
+    height: 25rem;
+}
