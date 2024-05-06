@@ -19,8 +19,6 @@ html {
     padding: 2rem;   
     border-radius: 1rem;
 }
-
-
 *,
 *:before,
 *:after {
@@ -59,7 +57,6 @@ h3 {
 .title span {
     font-size: 2rem;
 }
-
 /* /títulos*/
 /*navegación*/
 .nav-bg {
@@ -93,31 +90,24 @@ h3 {
     color: var(--a-dark);
     padding: auto;
 }
-/*navegación*/
-/*imagen*/
-.imagen{
-    text-align: center;
-    margin: 2rem;
-}
-.img{
-    width: 30rem;
-    height: 25rem;
-}
-/*/imagen*/
-.aprendizaje{
-    text-align: center;
-}
-.aprendizaje p{
-    font-weight: bold;
-    font-size: 1.7rem;
-}
-/*perfil*/
-.perfil {
+/*/navegación*/
+/*contacto*/
+.h{
     color: black;
     line-height: 2;
-    max-width: 120rem ;
+    max-width: 80rem ;
     margin: 0 auto;
-    text-align: justify;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+.contacto{
+    color: black;
+    line-height: 2;
+    max-width: 80rem ;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10rem;
 }
 /*footer*/
 .footer p {
