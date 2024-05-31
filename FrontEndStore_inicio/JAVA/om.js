@@ -9,16 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
-
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll hacia abajo
             nav.classList.add('oculto');
+            nav.classList.remove('mostrar')
         } else {
-            // Scroll hacia arriba o en la parte superior de la página
             nav.classList.remove('oculto');
+            nav.classList.add('mostrar')
         }
-
+        
         lastScrollTop = st;
     }, false);
 });
-

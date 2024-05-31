@@ -74,7 +74,7 @@ font-size: 2.4rem;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  transition: all 0.4s ease;
+  transition: all 1s ease;
 }
 
 .nave__logo {
@@ -105,7 +105,6 @@ font-size: 2.4rem;
     padding: 1rem 0.5rem; 
     text-align: center;
     justify-content: center;
-    top:0%;
   }
 
   .nave__logo {
@@ -119,8 +118,13 @@ font-size: 2.4rem;
     margin: 2.5rem 0;
     font-size: 1.7rem;
   }
-  .nave.oculto {
+.nave.oculto   {
     transform: translateY(-100%);
+    transition: all 1s ease;
+  }
+  .nave.mostrar {
+    transform: translateY(0%);
+    transition: all 2s ease;
   }
 }
 
@@ -132,9 +136,6 @@ font-size: 2.4rem;
 .scroll {
   height: 10rem;
 }
-
-
-
 
 /*/barra-nv*/
 /*gráfico*/
