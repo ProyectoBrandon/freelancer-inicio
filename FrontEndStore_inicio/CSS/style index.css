@@ -1,4 +1,4 @@
-/*libre*/
+/*librería*/
 :root{
   --negro: #000000;
   --p-oscuro: #F4DFC8;
@@ -8,7 +8,8 @@
   --fuentepri:"Staatliches", sans-serif;
 /*/fuente*/
 }
-/*libre*/
+/*/librería*/
+/*global*/
 html {
 box-sizing: border-box;
 font-size: 62.5%;
@@ -16,7 +17,8 @@ font-size: 62.5%;
 *, *:before, *:after {
 box-sizing: inherit;
 }
-/*global*/
+
+
 body {
 background-color: var(--c-soft);
 font-size: 1.6rem;
@@ -210,9 +212,10 @@ grid-template-columns: repeat( 1,2fr);
 grid-template-columns: repeat( 2,1fr);
 margin-top: 3rem;
 margin-bottom: 3rem;
+
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
 .grid__4{
  grid-template-columns: repeat(2,3fr);
  margin-top: 3rem;
