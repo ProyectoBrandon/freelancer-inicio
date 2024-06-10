@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
         if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll hacia abajo
             nav.classList.add('oculto');
             nav.classList.remove('mostrar')
         } else {
