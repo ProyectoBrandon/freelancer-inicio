@@ -119,6 +119,17 @@ h3 {
     margin: 0 auto;
     text-align: justify;
 }
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 450px) {
+    .foto__proyecto{
+        width: 100%;
+    }
+}
+/*/perfil*/
 /*footer*/
 .footer p {
     text-align: center;
@@ -132,3 +143,11 @@ h3 {
     font-weight: bold;
 }
 /*footer*/
+/*scroll*/
+.title,
+.perfil,
+.aprendizaje,
+.foto{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
