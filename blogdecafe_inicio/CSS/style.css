@@ -179,3 +179,39 @@ font-weight: normal;
     margin-top: 4rem;
 }
 /*/footer*/
+
+/*nosotros*/
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sobre-nosotros__img,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+    }
+    /*grid forma*/
+    /*.sobre-nosotros{
+        display: grid;
+        grid-template-columns:  repeat(2,1fr);
+        column-gap: 2rem ;
+    }*/
+}
+/*/nosotros*/
+/*cursos*/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width:768px) {
+    .curso{
+        display: grid;
+        grid-template-columns:  1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+}
+
+/*/cursos*/
