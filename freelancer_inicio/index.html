@@ -147,23 +147,34 @@
                     <legend>Demostración de formulario</legend>
                     <div class="contenedor-campos">
                         <div class="campo">
-                            <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu nombre">
+                            <label for="nombre">Nombre</label>
+                            <input class="input-text"
+                            type="text"
+                            placeholder="Tu nombre"
+                            id="nombre">
                         </div>
 
                         <div class="campo">
-                            <label>Teléfono</label>
-                            <input class="input-text" type="number" placeholder="Tu teléfono">
+                            <label for="telefono">Teléfono</label>
+                            <input class="input-text"
+                            type="number"
+                            placeholder="Tu teléfono"
+                            id="telefono">
                         </div>
 
                         <div class="campo">
-                            <label>Email</label>
-                            <input class="input-text" type="email" placeholder="Correo electrónico">
+                            <label for="email">Email</label>
+                            <input class="input-text"
+                            type="email"
+                            placeholder="Correo electrónico"
+                            id="email">
                         </div>
 
                         <div class="campo">
-                            <label>Mensaje</label>
-                            <textarea class="input-text" placeholder="Deja tu comentario"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="input-text"
+                            placeholder="Deja tu comentario"
+                            id="mensaje"></textarea>
                         </div>
                     </div>
                     <div>
@@ -174,7 +185,7 @@
                         <label>No</label>
                         <input class="sino" type="radio" id="no" name="acep">
                     </div>
-                    <div>
+                    <div class="campo">
                         <input class="boton2" type="submit" value="Enviar">
                     </div>
 
@@ -188,7 +199,8 @@
             Todos los derechos son reservados. <span>Brandon Peña Contreras</span>
         </p>
     </footer>
-
+    <script src="js/modernizr.js"></script>
+    <script src="js/validacon de formulario.js"></script>
 </body>
 
 </html>
