@@ -7,11 +7,7 @@ const datos = {
     si:null,
     no: null
 }
-//validación si no
 
-
-
-//end validación
 const nombreinput = document.querySelector ('#nombre');
 const emailinput = document.querySelector ('#email');
 const telefonoinput=document.querySelector('#telefono')
@@ -30,7 +26,7 @@ siinput.addEventListener('change',leerTexto)
 
 // evento submit para enviar información
 formulario.addEventListener('submit', function (evento){
-    evento.preventDefault() //"preventDefault" previene la acción por defecto
+    evento.preventDefault()
 
     // validar el formulario
 
@@ -40,14 +36,14 @@ formulario.addEventListener('submit', function (evento){
         mostrarAlerta('Todos los campos son obligatorios y se debe aceptar términos y condiciones',true);
         
 
-        return;//Corta la ejecución del código
+        return;
     }
     // crear la alerta de enviar correctamente
     mostrarAlerta('Mensaje enviado correctamente');
     
 });
 
-// juntando funciones para tener un código mas compacto 
+
 function mostrarAlerta(mensaje, error = null){
     const alerta = document.createElement('p');
     alerta.textContent=mensaje;
@@ -64,13 +60,12 @@ function mostrarAlerta(mensaje, error = null){
     alerta.remove();
     }, 3000);
 }
+
 //toma la inf del formulario y los guarda
 function leerTexto (e){
-    // console.log(e.target.value);
     datos[e.target.id] = e.target.value
 
     validación[e.target.id]= e.target.value
 
     console.log(e.target);
-    // console.log(datos);
 };
