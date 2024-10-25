@@ -11,9 +11,11 @@ function crearGaleria(){
 
     for(let i=1; i<=Cantidad_Imagenes; i++){
         
-        const imagen = document.createElement('IMG')
-        imagen.src=`src/img/gallery/full/${i}.jpg`
-        imagen.alt='Imagen Galería' 
+        const imagen = document.createElement('PICTURE')
+        imagen.innerHTML = 
+        `<source srcset="dist/img/gallery/thumb/${i}.avif" type="image/avif">
+        <source srcset="dist/img/gallery/thumb/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="dist/img/gallery/thumb/${i}.jpg" alt="imagen galeria">`;
 
         //Event handler
         imagen.onclick = function(){
