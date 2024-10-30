@@ -119,25 +119,30 @@ h3 {
     margin: 0 auto;
     text-align: justify;
 }
+
 .foto{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 3rem;
-    width: 95%;
-    margin: 0 auto;
+    text-align: center;
 }
-@media (max-width: 1000px) {
-    .foto{
+.foto__proyecto{
+    width: 480px;
+}
+@media (max-width: 768px) {
+    .foto,.foto__proyecto{
         grid-template-columns: repeat(1,2fr);
+        width: 100%;
         text-align: center;
     }
 }
-@media (max-width: 550px) {
-    .foto__proyecto{
-        width: 95%;
-        gap: 2rem;
-        justify-content: center;
-    }
+
+
+.foto1{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
 }
 /*/perfil*/
 /*footer*/
@@ -155,9 +160,9 @@ h3 {
 /*footer*/
 /*scroll*/
 .title,
-.perfil,
 .aprendizaje,
 .foto,
+.foto1,
 .footer{
     scroll-snap-align: center;
     scroll-snap-stop: always;

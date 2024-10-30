@@ -163,26 +163,24 @@ h3 {
 /* /hero*/
 /*servicios*/
 .Servicio,
+.Servicio1,
 .navegacion-principal,
-.formulario,
-.Servicio1 {
+.formulario{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
-
+@media (min-width: 768px) {
+    .Servicios1 {
+        display: grid;
+        grid: 100% / repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
 @media (min-width: 768px) {
     .Servicios {
         display: grid;
         grid: 100% / repeat(3, 1fr);
         column-gap: 2rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .Servicio1 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
     }
 }
 
