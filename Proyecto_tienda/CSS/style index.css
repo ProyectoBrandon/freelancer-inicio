@@ -42,16 +42,6 @@ max-width: 100%;
 max-width: 90%;
 margin: 0 auto;
 }
-@media (min-width: 768px) {
-.contenedor,
-.contenedor__2,
-.contenedor__3,
-.contenedor__4,
-.contenedor5{
-  max-width: 85%;
-  margin: 0 auto;
-} 
-}
 h1,h2,h3{
 text-align: center;
 color: var(--negro);
@@ -68,23 +58,20 @@ font-size: 2.4rem;
 }
 /*/global*/
 /*barra-nv*/
-
-.nave {
-  position: fixed;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  transition: all 1s ease;
-  z-index: 1;
-}
-
-.nave__logo {
-  width: 20rem;
-  padding: 2rem;
-  text-align: center;
-}
+  .nave {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .nave__logo {
+    width: 20%;
+    padding: 1rem 0;
+  }
 
 .nave__menu a {
   margin: 4rem;
@@ -93,7 +80,6 @@ font-size: 2.4rem;
   font-size: 2rem;
   transition: all 0.4s ease;
 }
-
 .nave__menu a:hover {
   padding: .3rem .6rem;
   background-color: var(--p-oscuro);
@@ -101,36 +87,16 @@ font-size: 2.4rem;
   border-radius: 1.5rem;
 }
 
-
-@media  (max-width: 700px) {
-  .nave {
-    flex-direction: column;
-    padding: 1rem 5rem; 
-    text-align: center;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .nave__logo {
-    width: 35%;
-    padding: 1rem 0;
-  }
-  .nave__menu a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2.5rem 0;
-    font-size: 1.7rem;
-  }
 .nave.oculto   {
-    transform: translateY(-100%);
-    transition: all 1s ease;
-  }
-  .nave.mostrar {
-    transform: translateY(0%);
-    transition: all 2.5s ease;
-  }
+  transform: translateY(-100%);
+  transition: all 1s ease;
 }
+.nave.mostrar {
+  transform: translateY(0%);
+  transition: all 2.5s ease;
+}
+
+
 
 .nave.active {
   background-color: var(--c-soft);
@@ -145,116 +111,71 @@ font-size: 2.4rem;
 /*gráfico*/
 .grafico1{
 width: 100%;
-height: 65rem;
+height: 40rem;
 }
 .grafico2{
-height: 55rem;
+height: 20rem;
 }
-@media (min-width: 500px) {
-  .grafico2{
-    width: 100%;
-  }
-}
+
 .grafico--node{
 background-color: var(--p-oscuro);
 
 }
+
 .grafico2--zapa{
-grid-row: 1/2;
-grid-column: 1/3;
-height: 67rem;
-background-repeat: no-repeat;
-background-size:  100%;
-margin-bottom: -3rem;
-background-image:url(/img/grafico5.png);
+  grid-row: 1/2;
+  grid-column: 1/3;
 } 
 
-@media (max-width: 1000px) {
-  .grafico2--zapa{
-    margin-bottom: -22rem;
-
-  } 
-} 
 
 /*/gráfico*/
 /*grid*/
+  .grid,
+  .grid__2,
+  .grid__3,
+  .grid__4,
+  .grid__5{
+  display: grid;
+  column-gap:1rem;
+  gap: 2rem;
+  }
 .grid{
-grid-template-columns: repeat( 1,6fr);
-}
-@media (min-width: 700px) {
- .grid{
   grid-template-columns: repeat( 3,2fr);
   margin-top: 3rem;
   margin-bottom: 3rem;
  }
-}
-.grid__2{
-grid-template-columns: repeat( 1,1fr);
-}
-@media (min-width: 700px) {
-.grid__2{
+ .grid__2{
   grid-template-columns: repeat( 2,1fr);
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 } 
-}
 .grid__3{
-grid-template-columns: repeat( 1,2fr);
-}
-@media (min-width: 700px) {
- .grid__3{
   grid-template-columns: repeat( 2,1fr);
   margin-top: 3rem;
   margin-bottom: 3rem;
  }
-}
-.grid__4{
-grid-template-columns: repeat( 2,1fr);
-margin-top: 3rem;
-margin-bottom: 3rem;
-
-}
-
-@media (min-width: 700px) {
-.grid__4{
- grid-template-columns: repeat(2,3fr);
- margin-top: 3rem;
- margin-bottom: 3rem;
-}
-}
+ .grid__4{
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+ }
 .grid__5{
-display: column;
-max-width:100%;
-margin: 0 auto;
-align-items: center;
-}
-@media (max-width: 1000px ) {
-.grid__5{
-  width: 100%;
-}
-}
-@media (min-width: 500px ) {
-  .grid__5{
-    max-width: 70%;
+  grid-template-columns: repeat(1,2fr);
+  display: column;
+  max-width:50%;
+  margin: 0 auto;
+  align-items: center;
   }
-}
-.grid,
-.grid__2,
-.grid__3,
-.grid__4,
-.grid__5{
-display: grid;
-column-gap:2rem;
-gap: 2rem;
-}
 /*/grid*/
 /*producto*/
 .producto{
 background-color: var(--c-ne);
 padding: 1rem;
+width: 95%;
+text-align: center;
 }
 .producto__img{
-width: 100%;
+width: 20rem ;
 }
 .producto__img:hover{
 background-color: var(--p-oscuro);
@@ -281,18 +202,6 @@ line-height: 2.5rem;
 .producto--margin{
   margin-top: -23rem;
 }
-@media (min-width: 470px) {
-  .producto--margin{
-    margin-top: -10rem;
-  }
-}
-@media (min-width: 700px) {
-   .producto--margin{
-    margin-top: 1rem;
-   } 
-}
-
-
 /*/producto*/
 /*footer*/
 .footer{
@@ -309,3 +218,90 @@ font-weight: bold;
 text-transform: uppercase;
 }
 /*/footer*/
+/*medias*/
+/*medias*/
+@media  (max-width: 700px) { 
+  .nave {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    z-index: 1;
+  }
+  .nave__logo {
+    width: 20rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  .nave__logo {
+    width: 35%;
+    padding: 1rem 0;
+  }
+  .nave__menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+    font-size: 1.7rem;
+  }
+  .contenedor,
+.contenedor__2,
+.contenedor__3,
+.contenedor__4,
+.contenedor5{
+  max-width: 85%;
+  margin: 0 auto;
+} 
+.grid{
+  grid-template-columns: repeat( 2,6fr);
+  justify-items: center;
+  }
+  .grid__2{
+  grid-template-columns: repeat( 2,1fr);
+  justify-items: center;
+  }
+  .grid__3{
+  grid-template-columns: repeat( 2,1fr);
+  justify-items: center;
+  }
+  
+  .grid__4{
+  grid-template-columns: repeat( 2,1fr);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  }
+  .grid__5{
+    max-width: 70%;
+  }
+}
+@media  (max-width: 560px){
+  .grid{
+    grid-template-columns: repeat( 1,1fr);
+    justify-items: center;
+    }
+    .grid__2{
+    grid-template-columns: repeat( 1,1fr);
+    }
+    .grid__3{
+    grid-template-columns: repeat( 1,2fr);
+    }
+    
+    .grid__4{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    justify-items: center;
+    }
+    .grid__5{
+      max-width: 70%;
+      justify-items: center;
+    }
+    .producto{
+      width: 75%;
+    }
+}
+/*/medias*/
