@@ -172,7 +172,7 @@ h3 {
 @media (min-width: 768px) {
     .Servicios1 {
         display: grid;
-        grid: 100% / repeat(2,1fr);
+        grid: 100% / repeat(3,1fr);
         column-gap: 2rem;
     }
 }
