@@ -177,7 +177,7 @@ text-align: center;
 .producto__img{
 width: 20rem ;
 }
-.producto__img:hover{
+.producto:hover{
 background-color: var(--p-oscuro);
 }
 .producto__nombre{
